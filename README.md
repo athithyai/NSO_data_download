@@ -57,10 +57,9 @@ Follow these steps to get the application running on your local machine:
 
 2.  **Clone Repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
-    cd YOUR_REPOSITORY_NAME
+    git clone https://github.com/athithyai/NSO_data_download.git
+    cd NSO_data_download
     ```
-    *(Replace with your actual username and repository name)*
 
 3.  **Create & Activate Virtual Environment:**
     ```bash
@@ -115,12 +114,10 @@ https://github.com/user-attachments/assets/38331bb6-80e4-4946-8449-5145b94e0600
 
 ## Contributing
 
-*(Optional: Add guidelines if you want others to contribute)*
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 
-*(Optional: Choose a license like MIT or Apache 2.0 and add a LICENSE file)*
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ## Acknowledgements
