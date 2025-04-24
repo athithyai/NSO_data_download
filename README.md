@@ -20,9 +20,8 @@ It connects directly to the **NSO Satellite Data Portal API** to help you visual
 * **Modern UI:** Clean interface styled with custom CSS.
 
 
-<video src="satellite_finder_app/video.mp4" width="700" controls muted playsinline>
-  Your browser does not support the video tag. You can <a href="satellite_finder_app/video.mp4">download the video</a> instead.
-</video>
+[![Demo Screenshot](screenshot.png)](satellite_finder_app/video.mp4)
+
 
 
 ## About the NSO Satellite Data Portal
