@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSO Radarsat-2 data finder</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛰️</text></svg>">
+
+</head>
+<body>
+    <h1>NSO Radarsat-2 data finder</h1>
+
+    <p>
+        Alright, RadarSat-2 explorer! So, you know the
+        <a href="https://satellietdataportaal.nl/" target="_blank" rel="noopener noreferrer">NSO portal</a>
+        holds the precious radar data, but getting a quick view of exactly <em>where</em> those RadarSat-2 scenes cover can sometimes feel like a treasure hunt, right? This tool is your handy map!
+    </p>
+
+    <p style="text-align: center; max-width: 600px; margin: 0 auto 10px auto; font-weight: 600;">Here's the quick guide:</p>
+
+    <div class="intro-section">
+        <ul class="intro-steps-list">
+            <li><strong>Login:</strong> Pop in your official NSO portal username & password (used temporarily).</li>
+            <li><strong>Dates:</strong> Pick your start and end date range.</li>
+            <li><strong>Area:</strong> Choose 'Entire Country' or select 'Draw AOI' & sketch on the map.</li>
+            <li><strong>Search:</strong> Hit the button!</li>
+            <li><strong>View:</strong> Check out the list & map footprints below.</li>
+        </ul>
+
+        <div class="info-box polarization-note">
+            <strong>Quick Note on Radar Polarization:</strong> Radar sends waves oriented Horizontally (H) or Vertically (V). Radarsat-2 uses different send/receive combos, revealing different surface details:
+            <ul>
+                <li><strong>HH/VV (Co-pol):</strong> Send & receive the same (H→H or V→V). Sensitive to surface roughness (HH) or vertical structures (VV).</li>
+                <li><strong>HV/VH (Cross-pol):</strong> Send H receive V, or vice-versa. Good for volume scattering (like in vegetation).</li>
+            </ul>
+            This tool finds available RadarSat-2 images, regardless of their polarization type returned by the API for the chosen dates/area.
+        </div>
+    </div>
+    <div class="container">
+        <div class="controls">
+            <form id="search-form">
+                 <fieldset>
+                    <legend>Search Area</legend>
+                    <div>
+                        <input type="radio" id="aoi_country" name="aoi_mode" value="country" checked>
+                        <label for="aoi_country">Entire Country</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="aoi_custom" name="aoi_mode" value="custom">
+                        <label for="aoi_custom">Draw Area of Interest (AOI)</label>
+                    </div>
+                    <small id="aoi-instructions" style="display: none; margin-top: 5px;">Use the drawing tools on the map (top left) to draw a rectangle or polygon.</small>
+                </fieldset>
+                <hr>
+
+                <fieldset>
+                    <legend>Search Parameters</legend>
+                    <div>
+                        <label for="startdate">Start Date:</label>
+                        <input type="date" id="startdate" name="startdate" required>
+                    </div>
+                    <div>
+                        <label for="enddate">End Date:</label>
+                        <input type="date" id="enddate" name="enddate" required>
+                    </div>
+                     <p style="margin-bottom: 10px;"><strong>Sensor:</strong> RadarSat-2</p>
+                </fieldset>
+                <hr>
+
+                <fieldset>
+                    <legend>API Credentials</legend>
+                    <div>
+                        <label for="api-username">Username:</label>
+                        <input type="text" id="api-username" name="api-username" required autocomplete="username">
+                    </div>
+                    <div>
+                        <label for="api-password">Password:</label>
+                        <input type="password" id="api-password" name="api-password" required autocomplete="current-password">
+                    </div>
+                    <small>
+                        Enter your NSO satellite portal credentials. If you don't have an account,
+                        <a href="https://www.satellietdataportaal.nl/registreren/" target="_blank" rel="noopener noreferrer">register here</a>.
+                        Credentials are sent to the server for processing (use HTTPS for deployment) and are used temporarily for search and downloads.
+                    </small>
+                </fieldset>
+
+
+                <button type="submit" id="search-button">Search</button>
+                <span id="loading-indicator" style="display: none;"> <span class="spinner"></span> Loading...</span>
+            </form>
+             <div id="error-message-area" class="error-message" style="margin-top: 10px; display: none;"></div> </div>
+
+        <div class="results-container">
+            <div id="map"></div>
+            <div id="results">
+                <h2>Results</h2>
+                <ul id="results-list">
+                    <li>Please enter credentials and search parameters.</li>
+                </ul>
+            </div>
+        </div>
+    </div> <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
