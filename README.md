@@ -6,6 +6,7 @@ Alright, RadarSat-2 explorer! Ever felt like finding specific RadarSat-2 coverag
 
 It connects directly to the **NSO Satellite Data Portal API** to help you visually discover RadarSat-2 scenes based on your criteria. You can search the entire country or draw your own Area of Interest (AOI), specify dates, and instantly see the footprints of available images plotted on an interactive map.
 
+![screenshot](https://github.com/user-attachments/assets/d7da43fe-ccdc-4b40-9528-97fe2de527f1)
 
 ## Features
 
@@ -18,16 +19,6 @@ It connects directly to the **NSO Satellite Data Portal API** to help you visual
 * **Results List:** Shows metadata (ID, Acquired Date, Resolution) for found images.
 * **Proxied Downloads:** Download links work seamlessly without requiring a second login prompt (credentials handled via secure session).
 * **Modern UI:** Clean interface styled with custom CSS.
-
-
-
-
-
-
-https://github.com/user-attachments/assets/38331bb6-80e4-4946-8449-5145b94e0600
-
-
-
 
 
 ## About the NSO Satellite Data Portal
@@ -104,6 +95,8 @@ Follow these steps to get the application running on your local machine:
     * Open your web browser and navigate to: `http://127.0.0.1:5000`
 
 ## How to Use the Web App
+
+https://github.com/user-attachments/assets/38331bb6-80e4-4946-8449-5145b94e0600
 
 1.  **Enter Credentials:** Input your NSO Portal Username and Password.
 2.  **Select Dates:** Choose a Start Date and End Date for your search window.
