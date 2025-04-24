@@ -1,0 +1,35 @@
+# Byte-code files
+__pycache__/
+*.py[co]
+*.pyd
+*$py.class
+
+# Environments
+venv/
+env/
+.venv/
+# add other environment folder names here if you use different ones
+
+# Editor/IDE specific files
+.vscode/ # VS Code settings - add this line if you don't want to share your specific VS Code settings
+.idea/ # IntelliJ IDEA
+
+# Distribution / build files
+dist/
+build/
+*.egg-info/
+*.dist-info/
+wheels/
+
+# Packaging
+.Python
+*.env # Environment variables file (often contains secrets)
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+
+# OS generated files
+.DS_Store # macOS
+Thumbs.db # Windows
