@@ -21,7 +21,10 @@ It connects directly to the **NSO Satellite Data Portal API** to help you visual
 
 
 
-[![Watch Demo Video](https://img.shields.io/badge/🎬%20Watch%20Demo%20Video-blue?style=for-the-badge)](https://youtu.be/43tX1bIZ1no)
+
+
+
+https://github.com/user-attachments/assets/38331bb6-80e4-4946-8449-5145b94e0600
 
 
 
