@@ -1,13 +1,11 @@
-# NSO RadarSat-2 Data Finder ✨🛰️
+# NSO RadarSat-2 Data Finder ✨🛰️ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ## Overview
+## Overview
 
 Alright, RadarSat-2 explorer! Ever felt like finding specific RadarSat-2 coverage over the Netherlands on the official NSO portal was a bit of a treasure hunt? 🗺️ This web application aims to be your handy map and magnifying glass!
 
 It connects directly to the **NSO Satellite Data Portal API** to help you visually discover RadarSat-2 scenes based on your criteria. You can search the entire country or draw your own Area of Interest (AOI), specify dates, and instantly see the footprints of available images plotted on an interactive map.
 
-![App Screenshot Placeholder](images/screenshot.png)
-*(Suggestion: Create an `images` folder in your repo and add a screenshot named `screenshot.png`)*
 
 ## Features
 
@@ -95,23 +93,7 @@ Follow these steps to get the application running on your local machine:
     * Register here if needed: [https://www.satellietdataportaal.nl/registreren/](https://www.satellietdataportaal.nl/registreren/)
     * You will enter these credentials directly into the web application's form each time you search.
 
-6.  **Set Flask Secret Key (CRITICAL for Downloads):**
-    * The download proxy relies on secure sessions, which require a secret key.
-    * **Generate a strong key:** Open a terminal/command prompt and run:
-        ```bash
-        python -c "import secrets; print(secrets.token_hex(32))"
-        ```
-    * Copy the output string.
-    * **Set it as an environment variable** before running the app. **DO NOT commit this key!**
-        * *(Mac/Linux - temporary for current session)*:
-            `export FLASK_SECRET_KEY='your_pasted_secret_string_here'`
-        * *(Windows CMD - temporary)*:
-            `set FLASK_SECRET_KEY=your_pasted_secret_string_here`
-        * *(Windows PowerShell - temporary)*:
-            `$env:FLASK_SECRET_KEY='your_pasted_secret_string_here'`
-        * *(For persistent setting, add to your shell profile or system variables)*
-
-7.  **Run the Application:**
+6.  **Run the Application:**
     * Make sure your virtual environment is active and `FLASK_SECRET_KEY` is set.
     * Run the Flask development server:
         ```bash
@@ -119,7 +101,7 @@ Follow these steps to get the application running on your local machine:
         ```
         *(Alternatively: `python3 -m flask run`)*
 
-8.  **Access the App:**
+7.  **Access the App:**
     * Open your web browser and navigate to: `http://127.0.0.1:5000`
 
 ## How to Use the App
@@ -137,7 +119,6 @@ Follow these steps to get the application running on your local machine:
 ## Security Notes
 
 * **SSL Verification (`verify=False`):** The current code **disables SSL certificate verification** when contacting the NSO API. This is a **significant security risk** and only intended as a temporary workaround for potential local environment issues. For any real use, **remove `verify=False`** from `app.py` and ensure your server environment can correctly validate the NSO API's certificate.
-* **Flask Secret Key:** Your `FLASK_SECRET_KEY` **must be kept secret** and should be set via environment variables, never committed to version control. It's essential for secure session management.
 * **HTTPS for Deployment:** This application **must be deployed using HTTPS** (e.g., via a reverse proxy like Nginx with Let's Encrypt) to protect user credentials and session cookies in transit. Running over HTTP is insecure outside of local testing on `127.0.0.1`.
 
 ## Contributing
