@@ -20,7 +20,8 @@ It connects directly to the **NSO Satellite Data Portal API** to help you visual
 * **Modern UI:** Clean interface styled with custom CSS.
 
 
-[![Demo Screenshot](satellite_finder_app/screenshot.png)](satellite_finder_app/video.mp4)
+[![Watch the demo on YouTube](https://img.youtube.com/vi/43tX1bIZ1no/0.jpg)](https://youtu.be/43tX1bIZ1no)
+
 
 
 
