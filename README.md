@@ -83,7 +83,6 @@ Follow these steps to get the application running on your local machine:
     * You will enter these credentials directly into the web application's form each time you search.
 
 6.  **Run the Application:**
-    * Make sure your virtual environment is active and `FLASK_SECRET_KEY` is set.
     * Run the Flask development server:
         ```bash
         flask run
@@ -93,7 +92,7 @@ Follow these steps to get the application running on your local machine:
 7.  **Access the App:**
     * Open your web browser and navigate to: `http://127.0.0.1:5000`
 
-## How to Use the App
+## How to Use the Web App
 
 1.  **Enter Credentials:** Input your NSO Portal Username and Password.
 2.  **Select Dates:** Choose a Start Date and End Date for your search window.
