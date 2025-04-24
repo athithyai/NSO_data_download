@@ -19,6 +19,12 @@ It connects directly to the **NSO Satellite Data Portal API** to help you visual
 * **Proxied Downloads:** Download links work seamlessly without requiring a second login prompt (credentials handled via secure session).
 * **Modern UI:** Clean interface styled with custom CSS.
 
+
+<video src="images/YOUR_FILENAME.mp4" width="700" controls muted playsinline>
+  Your browser does not support the video tag. You can <a href="satellite_finder_app/video.mp4">download the video</a> instead.
+</video>
+
+
 ## About the NSO Satellite Data Portal
 
 The [Dutch Satellite Data Portal](https://www.satellietdataportaal.nl/) is run by the **Netherlands Space Office (NSO)**. It provides free access to satellite data covering the Netherlands (including Caribbean Netherlands). While it offers various datasets (optical and radar), this tool specifically utilizes the **API access** to search for RadarSat-2 data. Users need to register with the portal to get credentials for API usage and data download.
