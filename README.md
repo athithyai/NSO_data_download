@@ -34,17 +34,6 @@ Key characteristics available via the NSO portal often include:
 * **Polarization:** See the section below! Radar data comes in different polarizations, affecting what features are prominent.
 * **Data Products:** Typically delivered as complex data or detected image products (this tool links to whatever downloads the API provides).
 
-### Understanding Radar Polarization
-
-Radar works by sending and receiving microwave signals. **Polarization** refers to the orientation of these electromagnetic waves – usually either **Horizontal (H)** or **Vertical (V)**. RadarSat-2 can send and receive in different combinations, and each combination interacts differently with the ground, highlighting different features:
-
-* **HH (Horizontal Send, Horizontal Receive):** Often sensitive to surface roughness, orientation of linear features, and good for seeing through some vegetation canopies.
-    * `![HH Polarization Diagram Placeholder](images/pol_hh.png)` *(Replace with URL or path to a simple diagram showing horizontal waves)*
-* **VV (Vertical Send, Vertical Receive):** Often sensitive to vertically oriented structures (like buildings, some vegetation stalks) and water surfaces.
-    * `![VV Polarization Diagram Placeholder](images/pol_vv.png)` *(Replace with URL or path to a simple diagram showing vertical waves)*
-* **HV / VH (Cross-Polarization):** Sends one orientation (H or V) and receives the other (V or H). This signal results from multiple bounces or scattering within a volume, making it very sensitive to vegetation structure/canopy and complex surfaces.
-    * `![Cross Polarization Diagram Placeholder](images/pol_cross.png)` *(Replace with URL or path to a simple diagram showing cross-polarization)*
-
 **Note:** This application currently searches for all available RadarSat-2 images matching your date/area criteria, regardless of the specific polarization offered by the NSO API for that scene. The results list may not explicitly show the polarization type.
 
 ## Tech Stack
