@@ -80,7 +80,7 @@ Follow these steps to get the application running on your local machine:
 
 5.  **NSO Portal Credentials:**
     * You need **your personal credentials** from the NSO Satellite Data Portal.
-    * Register here if needed: [https://www.satellietdataportaal.nl/registreren/](https://www.satellietdataportaal.nl/registreren/)
+    * Register here if needed: [https://www.spaceoffice.nl/nl/satellietdataportaal/toegang-data/registreren-radar/](https://www.spaceoffice.nl/nl/satellietdataportaal/toegang-data/registreren-radar/)
     * You will enter these credentials directly into the web application's form each time you search.
 
 6.  **Run the Application:**
