@@ -118,9 +118,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## License
 
-* [MIT](https://choosealicense.com/licenses/mit/)
 * Please note that usage of Radarsat-2 (RS-2) data is subject to the [End User License Agreement](https://www.spaceoffice.nl/files/Dataportaal/rs2_single_user_license_agreement.pdf) as provided by the Netherlands Space Office (NSO). More information is available on [NSO's User Licenses page](https://www.spaceoffice.nl/nl/satellietdataportaal/toegang-data/registreren-radar/).
-
+* [MIT license](https://choosealicense.com/licenses/mit/) for the repository.
 
 ## Acknowledgements
 
