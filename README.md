@@ -124,5 +124,3 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## Acknowledgements
 
 * [Netherlands Space Office (NSO)](https://www.spaceoffice.nl/)
-* [Leaflet](https://leafletjs.com/)
-* [Leaflet.draw](https://github.com/Leaflet/Leaflet.draw)
