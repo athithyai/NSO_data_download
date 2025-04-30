@@ -2,7 +2,7 @@
 
 ## Overview
 
-Alright, RadarSat-2 explorer! Ever felt like finding specific RadarSat-2 coverage over the Netherlands on the official NSO portal was a bit of a treasure hunt? 🗺️ This web application aims to be your handy map and magnifying glass!
+Alright, RadarSat-2 explorer! Ever felt like finding specific RadarSat-2 coverage over the Netherlands was a bit of a treasure hunt? 🗺️ This web application aims to be your handy map and magnifying glass!
 
 It connects directly to the **NSO Satellite Data Portal API** to help you visually discover RadarSat-2 scenes based on your criteria. You can search the entire country or draw your own Area of Interest (AOI), specify dates, and instantly see the footprints of available images plotted on an interactive map.
 
@@ -24,7 +24,7 @@ It connects directly to the **NSO Satellite Data Portal API** to help you visual
 
 RadarSat-2 is a Canadian C-band Synthetic Aperture Radar (SAR) satellite operated by MDA. SAR is an active sensor, meaning it sends out microwave pulses and records the signal that bounces back. This allows it to "see" through clouds and acquire images day or night.
 
-Key characteristics available via the NSO portal often include:
+Key characteristics available via the NSO api often include:
 
 * **Sensor:** C-Band SAR (~5.6 cm wavelength).
 * **Resolution:** The NSO portal provides access to data acquired at different resolutions over time (e.g., historical 25m data, and more recent 5m data since ~2015). This tool currently doesn't filter by resolution, showing all available results.
@@ -74,7 +74,7 @@ Follow these steps to get the application running on your local machine:
     ```
 
 5.  **NSO Portal Credentials:**
-    * You need **your personal credentials** from the NSO Satellite Data Portal.
+    * You need **your personal credentials** for the NSO api to work
     * Register here to access radar data: [https://www.spaceoffice.nl/nl/satellietdataportaal/toegang-data/registreren-radar/](https://www.spaceoffice.nl/nl/satellietdataportaal/toegang-data/registreren-radar/)
     * You will enter these credentials directly into the web application's form each time you search.
 
