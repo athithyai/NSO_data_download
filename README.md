@@ -20,11 +20,6 @@ It connects directly to the **NSO Satellite Data Portal API** to help you visual
 * **Proxied Downloads:** Download links work seamlessly without requiring a second login prompt (credentials handled via secure session).
 * **Modern UI:** Clean interface styled with custom CSS.
 
-
-## About the NSO Satellite Data Portal
-
-The [Dutch Satellite Data Portal](https://www.satellietdataportaal.nl/) is run by the **Netherlands Space Office (NSO)**. It provides free access to satellite data covering the Netherlands (including Caribbean Netherlands). While it offers various datasets (optical and radar), this tool specifically utilizes the **API access** to search for RadarSat-2 data. Users need to register with the portal to get credentials for API usage and data download.
-
 ## About RadarSat-2 Data (via NSO)
 
 RadarSat-2 is a Canadian C-band Synthetic Aperture Radar (SAR) satellite operated by MDA. SAR is an active sensor, meaning it sends out microwave pulses and records the signal that bounces back. This allows it to "see" through clouds and acquire images day or night.
